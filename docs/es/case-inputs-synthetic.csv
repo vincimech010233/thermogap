@@ -1,0 +1,17 @@
+case,stream,role,fluid,mdot_kg_s,cp_kJ_kgK_assumed,T_in_C,T_out_or_target_C,thermal_rate_kW,availability,annual_hours_or_cycles,efficiency_or_loss,notes
+A-source,hot-water-waste,source,water,2.000,4.18,90,55,292.6,6000 h/y,6000,0,synthetic; theoretical cooling bound
+A-sink,process-water,consumer,water,1.000,4.18,20,60,167.2,6000 h/y,6000,0.90,synthetic; 90% baseline boiler efficiency
+A-aux,pump,electricity,,0,0,0,0,2,6000 h/y,6000,0,synthetic pump power; 2 kW
+B-source,hot-waste-water,source,water,2.000,4.18,45,30,125.4,6000 h/y,6000,0,synthetic source cooling capacity bound
+B-source-active,hot-waste-water,source,water,2.000,4.18,45,37.03,66.666667,6000 h/y,6000,0,actual heat-pump scenario duty; Tevap <=32.03 C for assumed 5 K evaporator approach
+B-sink,cleaning-water,consumer,water,0,4.18,20,80,100,6000 h/y,6000,0.90,synthetic duty; COP scenario 3.0
+B-heat-pump,compressor,electricity,,0,0,0,0,33.333333,6000 h/y,6000,0,COP = Q_H/W = 3; Q_L = 66.666667 kW
+B-aux,pump,electricity,,0,0,0,0,1,6000 h/y,6000,0,synthetic pump power; 1 kW
+C-S1,source-S1,source,water,0.956938,4.18,100,75,100,00-08,300 cycles x 8 h,0,synthetic; can charge TES during 00-08
+C-A,sink-A,consumer,water,0.358852,4.18,20,60,60,16-24,300 cycles x 8 h,0.90,synthetic; cannot directly overlap S1
+C-S2,source-S2,source,water,0.956938,4.18,100,80,80,08-16,300 cycles x 8 h,0,synthetic; direct to sink B, 50 kW leaves source at 87.5 C
+C-B,sink-B,consumer,water,0.239234,4.18,20,70,50,08-16,300 cycles x 8 h,0.90,synthetic; direct match to S2
+C-TES,thermal-storage,loss,,,,,,,16-24,300 cycles,0.85,synthetic round-trip efficiency; for S1 to sink A
+C-network,central-distribution,loss,,,,,,,24 h,300 cycles,0.95,synthetic transfer efficiency
+C-aux-local,pumps,electricity,,0,0,0,0,1,24 h,300 cycles,0,synthetic local+TES aggregate power kW
+C-aux-central,pumps,electricity,,0,0,0,0,2,24 h,300 cycles,0,synthetic central loop aggregate power kW
