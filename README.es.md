@@ -27,7 +27,7 @@ Los informes separan hechos verificados, supuestos de ingeniería, predicciones 
 
 - [Informe principal](docs/es/thermogap-research.md)
 - [Revisión crítica](docs/es/critical-review.md)
-- [Rutas a productos comerciales](docs/es/commercial-product-routes.md)
+- [Rutas a productos comerciales](docs/es/commercial-product-routes.md) — incluye antecedentes más amplios; las rutas que dependen de otra instalación no demuestran producción en la misma fábrica.
 - [Estados Unidos, Europa y Canadá](docs/es/realistic-routes-usa-europe-canada.md)
 - [Producto nuevo en la misma fábrica](docs/es/same-factory-new-product.md)
 - [Requisitos para fábricas nuevas y existentes](docs/es/factory-new-build-retrofit-requirements.md)
