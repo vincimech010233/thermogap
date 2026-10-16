@@ -27,7 +27,7 @@ The reports separate verified facts, engineering assumptions, model predictions,
 
 - [Main research report (Spanish)](docs/es/thermogap-research.md)
 - [Critical review (Spanish)](docs/es/critical-review.md)
-- [Commercial product routes (Spanish)](docs/es/commercial-product-routes.md)
+- [Commercial product routes (Spanish)](docs/es/commercial-product-routes.md) — includes broader background; routes that depend on another facility are not evidence for same-factory production.
 - [United States, Europe, and Canada (Spanish)](docs/es/realistic-routes-usa-europe-canada.md)
 - [New product in the same factory (Spanish)](docs/es/same-factory-new-product.md)
 - [New-build and retrofit requirements (Spanish)](docs/es/factory-new-build-retrofit-requirements.md)
